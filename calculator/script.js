@@ -73,10 +73,10 @@ function addOperation() {
   if (history.textContent === "") {
     history.textContent += operand1 + " + ";
   } else if (lastOperator === "equal") {
-    history.textContent += " || " + operand1 + " + ";
+    history.textContent += " | + ";
   }
   else {
-    history.textContent += " | + ";
+    history.textContent += " || " + operand1 + " + ";
   }
   lastOperator = "add";
 }
@@ -89,10 +89,10 @@ function subtractOperation() {
   if (history.textContent === "") {
     history.textContent += operand1 + " - ";
   } else if (lastOperator === "equal") {
-    history.textContent += " || " + operand1 + " - ";
+    history.textContent += " | - ";
   }
   else {
-    history.textContent += " | - ";
+    history.textContent += " || " + operand1 + " - ";
   }
   lastOperator = "subtract";
 }
@@ -105,10 +105,10 @@ function multiplyOperation() {
   if (history.textContent === "") {
     history.textContent += operand1 + " x ";
   } else if (lastOperator === "equal") {
-    history.textContent += " || " + operand1 + " x ";
+    history.textContent += " | x ";
   }
   else {
-    history.textContent += " | x ";
+    history.textContent += " || " + operand1 + " x ";
   }
   lastOperator = "multiply";
 }
@@ -122,10 +122,10 @@ function divideOperation() {
     if (history.textContent === "") {
       history.textContent += operand1 + " : ";
     } else if (lastOperator === "equal") {
-      history.textContent += " || " + operand1 + " : ";
+      history.textContent += " | : ";
     }
     else {
-      history.textContent += " | : ";
+      history.textContent += " || " + operand1 + " : ";
     }
     lastOperator = "divide";
   }
@@ -219,6 +219,7 @@ for (let counter = 0; counter < digitButton.length; counter++) {
   digitButton[counter].addEventListener("click", function() {
     if (lastOperator === "equal") {
       displayValue = "";
+      lastOperator = ""; // xxx
     }
     displayValue += this.textContent;
     result();
