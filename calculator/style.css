@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  width: 350px;
+}
+
+#output {
+  width: 330px;
+  height: 90px;
+  background-color: lightgray;
+  padding: 5px;
+  margin: 10px 5px;
+  border-radius: 4px;
+}
+
+#history {
+  text-align: right;
+  font-size: 15px;
+  height: 60px;
+  overflow: auto;
+}
+
+#display {
+  text-align: right;
+  font-size: 30px;
+  height: 30px;
+}
+
+#digit {
+  width: 188px;
+  float: left;
+}
+
+#operation {
+  width: 124px;
+  float: right;
+}
+
+.normal {
+  width: 50px;
+  height: 50px;
+}
+
+.wide {
+  width: 114px;
+  height: 50px;
+}
+
+button {
+  background-color: lightgray;
+  margin: 5px;
+  font-size: 30px;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px gray;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
