@@ -38,13 +38,12 @@ article {
   width: 100%;
   margin: 70px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   opacity: 1;
 }
 
 .weatherBox {
-  width: 100%;
   text-align: center;
   opacity: 1;
 }
