@@ -1,13 +1,3 @@
-/*
-current city
-temperature
-sky
-windspeed
-small image for weather, 50x50
-different background for current temperature
-button fahrenheit - celsius
-*/
-
 var url;
 var latitude;
 var longitude;
@@ -34,15 +24,14 @@ function createUrl() {
 
 function getData() {
   $.getJSON(url, function(e) {
-    $("#location").text(e.name);
-   // $("#temperature").text(e.main.temp + " C");
     temperature = e.main.temp;
+    
+    $("#location").text(e.name);
     $("#temperature").text(Math.floor( temperature * 10 ) / 10 + " C");
     $("#sky").text(e.weather[0].description);
     $("#windspeed").text(e.wind.speed + " knots");
     $("#image").html("<img src=" + e.weather[0].icon + '">');
     
-  //  var temp = e.main.temp;
     if (temperature >= 20) {
       $("main").css("background-image", "url(" + urlSummer + ")");
     } else if (temperature >= 10 && temperature < 20) {
@@ -52,7 +41,6 @@ function getData() {
     } else {
       $("main").css("background-image", "url(" + urlWinter + ")");
     }
-    
   });
 }
 
@@ -66,7 +54,6 @@ function getPosition() {
       
       createUrl();
       getData()
-      
     });
   } else {
     console.log("Geolocation is not supported by this browser.");
@@ -74,7 +61,6 @@ function getPosition() {
 }
 
 $("#temperature").on("click", function() {
- // if (Boolen(temperature) == true) {
     if (celsius == true) {
       fahrenheit = Math.floor( (temperature * 1.8 + 32) * 10 ) / 10;
       $("#temperature").text(fahrenheit + " F");
@@ -83,7 +69,6 @@ $("#temperature").on("click", function() {
       $("#temperature").text(Math.floor( temperature * 10 ) / 10 + " C");
       celsius = true;
     }
-//  }
 })
 
 function debug() {
