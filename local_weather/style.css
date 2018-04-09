@@ -1,0 +1,62 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1507545237133-62ec4e09d6aa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a7450ff089dba907be2c118c8dca687d&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+}
+
+section {
+  width: 600px;
+  height: 300px;
+  xoutline: 1px solid red;
+  opacity: 0.6;
+  
+  border-radius: 5px;
+  box-shadow: 0 0 100px white;
+  background: white;
+}
+
+h1 {
+  margin: 60px 0;
+  text-align: center;
+  font-size: 40px;
+  opacity: 1;
+}
+
+article {
+  width: 100%;
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  xoutline: 1px solid red;
+  opacity: 1;
+}
+
+.weatherBox {
+  width: 100%;
+  xoutline: 1px solid red;
+  text-align: center;
+  opacity: 1;
+}
+
+#temperature {
+  cursor: pointer;
+}
+
+#temperature:hover {
+  text-shadow: 0 0 10px black;
+}
