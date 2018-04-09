@@ -21,9 +21,7 @@ main {
 section {
   width: 600px;
   height: 300px;
-  xoutline: 1px solid red;
-  opacity: 0.6;
-  
+  opacity: 0.8;
   border-radius: 5px;
   box-shadow: 0 0 100px white;
   background: white;
@@ -42,13 +40,11 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  xoutline: 1px solid red;
   opacity: 1;
 }
 
 .weatherBox {
   width: 100%;
-  xoutline: 1px solid red;
   text-align: center;
   opacity: 1;
 }
