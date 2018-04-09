@@ -37,7 +37,7 @@ function getData() {
     $("#location").text(e.name);
    // $("#temperature").text(e.main.temp + " C");
     temperature = e.main.temp;
-    $("#temperature").text(temperature + " C");
+    $("#temperature").text(Math.floor( temperature * 10 ) / 10 + " C");
     $("#sky").text(e.weather[0].description);
     $("#windspeed").text(e.wind.speed + " knots");
     $("#image").html("<img src=" + e.weather[0].icon + '">');
@@ -76,11 +76,11 @@ function getPosition() {
 $("#temperature").on("click", function() {
  // if (Boolen(temperature) == true) {
     if (celsius == true) {
-      fahrenheit = Math.floor((temperature * 1.8 + 32)*10) / 10;
+      fahrenheit = Math.floor( (temperature * 1.8 + 32) * 10 ) / 10;
       $("#temperature").text(fahrenheit + " F");
       celsius = false;
     } else {
-      $("#temperature").text(temperature + " C");
+      $("#temperature").text(Math.floor( temperature * 10 ) / 10 + " C");
       celsius = true;
     }
 //  }
