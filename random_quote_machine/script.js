@@ -1,16 +1,29 @@
+$.ajaxSetup({
+  cache: false
+});
 
-var apiUrl = "https://api.forismatic.com/api/1.0/";
-var request = new XMLHttpRequest();
-request.open("GET", apiUrl);
-request.responseType = "jsonp";
-request.send();
-request.onload = function() {
-  var response = request.response;
-  console.log(response);
+$("#buttonNewQuote").on("click", function() {
+  getQuote();
+})
+
+$("#buttonTwitter").on("click", function() {
+  tweet();
+})
+
+getQuote();
+
+function getQuote() {
+  var quotesondesignUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=";
+  
+  $("#quote").fadeOut(500);
+  $.getJSON(quotesondesignUrl, function(a) {
+    $("#quote").html(a[0].content + "<p>&mdash; " + a[0].title + "</p>")
+  });
+  $("#quote").fadeIn(1000);
 }
 
-
-//var test = JSON.parse("http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=JSON&lang=en");
-//var test = JSON.parse("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback");
-
-//console.log(test);
+function tweet() {
+  var textToTweet = $("#quote").text();
+  var tweetLink = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textToTweet);
+  window.open(tweetLink, '_blank');
+}
