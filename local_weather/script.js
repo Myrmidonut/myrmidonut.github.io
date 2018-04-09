@@ -61,6 +61,7 @@ function getPosition() {
 }
 
 $("#temperature").on("click", function() {
+  if (temperature != undefined) {
     if (celsius == true) {
       fahrenheit = Math.floor( (temperature * 1.8 + 32) * 10 ) / 10;
       $("#temperature").text(fahrenheit + " F");
@@ -69,6 +70,7 @@ $("#temperature").on("click", function() {
       $("#temperature").text(Math.floor( temperature * 10 ) / 10 + " C");
       celsius = true;
     }
+  }
 })
 
 function debug() {
