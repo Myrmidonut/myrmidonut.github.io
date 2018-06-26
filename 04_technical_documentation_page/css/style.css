@@ -16,6 +16,10 @@
   margin-bottom: 20px;
 }
 
+#hamburger-container a {
+  margin: 5px;
+}
+
 #nav-link-container {
   margin-left: 20px;
 }

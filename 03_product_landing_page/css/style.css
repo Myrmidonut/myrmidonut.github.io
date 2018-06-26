@@ -44,8 +44,15 @@ main {
   margin-left: 25px;
 }
 
+.hamburger-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .hamburger-container .nav-link {
   margin-left: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .nav-link-container {
