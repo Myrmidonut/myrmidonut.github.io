@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<nav id="navbar">
+  <header>
+      <h1>Python</h1>
+        <div class="hidden" id="hamburger-container">
+          <a class="nav-link-hamburger" href="#Introduction">Introduction</a>
+          <a class="nav-link-hamburger" href="#Console">Console</a>
+          <a class="nav-link-hamburger" href="#Files">Files</a>
+          <a class="nav-link-hamburger" href="#Import">Import</a>
+          <a class="nav-link-hamburger" href="#Comments">Comments</a>
+          <a class="nav-link-hamburger" href="#Line_Break">Line Break</a>
+          <a class="nav-link-hamburger" href="#Operators">Operators</a>
+          <a class="nav-link-hamburger" href="#Comparison">Comparison</a>
+          <a class="nav-link-hamburger" href="#Logic">Logic</a>
+          <a class="nav-link-hamburger" href="#Casting">Casting</a>
+          <a class="nav-link-hamburger" href="#Variables">Variables</a>
+          <a class="nav-link-hamburger" href="#Placeholder">Placeholder</a>
+        </div>
+      <i class="fas fa-bars"></i>
+  </header>
+  <div id="nav-link-container">
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Console">Console</a>
+    <a class="nav-link" href="#Files">Files</a>
+    <a class="nav-link" href="#Import">Import</a>
+    <a class="nav-link" href="#Comments">Comments</a>
+    <a class="nav-link" href="#Line_Break">Line Break</a>
+    <a class="nav-link" href="#Operators">Operators</a>
+    <a class="nav-link" href="#Comparison">Comparison</a>
+    <a class="nav-link" href="#Logic">Logic</a>
+    <a class="nav-link" href="#Casting">Casting</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Placeholder">Placeholder</a>
+  </div>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>
+      <h2>Introduction</h2>
+    </header>
+    <div class="section-content">
+      
+      <p>Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.</p>
+
+      <p>Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library.</p>
+
+      <p>Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.</p>
+      
+      <p>Version History:</p>
+      
+      <ul>
+        <li>Python 1.0 - January 1994</li>
+        <li>Python 2.0 - October 16, 2000</li>
+        <li>Python 2.7 - July 3, 2010</li>
+        <li>Python 3.0 - December 3, 2008</li>
+        <li>Python 3.6 - December 23, 2016</li>
+      </ul>
+      
+    </div>
+  </section>
+  
+  <section class="main-section" id="Console">
+    <header>
+      <h2>Console</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Open</h3>
+      <p>Open the Python console.</p>
+      <div class="code">
+        <code>python</code>
+      </div>
+      
+      <h3>Quit</h3>
+      <p>Quit the Python console.</p>
+      <div class="code">
+        <code>quit()</code>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="main-section" id="Files">
+    <header>
+      <h2>Files</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>File ending</h3>
+      <p>File ending of Python files.</p>
+      <div class="code">
+        <code>.py</code>
+      </div>
+    </div>
+  </section>
+  
+  <section class="main-section" id="Import">
+    <header>
+      <h2>Import</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Library</h3>
+      <p>Import a library to use inside a file.
+      <div class="code">
+        <code>import ...
+  time
+  webbrowser
+  os
+  turtle
+  urllib</code>
+      </div>
+        
+      <h3>File</h3>
+      <p>Import another file to use inside a file.</p>
+      <div class="code">
+<code>import &lt;filename&gt;</code>
+      </div>
+    </div>
+  </section>
+  
+  <section class="main-section" id="Comments">
+    <header>
+      <h2>Comments</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Single line</h3>
+      <p>A single line comment.</p>
+      <div class="code">
+        <code># ...</code>
+      </div>
+      
+      <h3>Multiple lines</h3>
+      <p>Multiple lines of comments.</p>
+      <div class="code">
+        <code>'''
+comment
+comment
+'''</code>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="main-section" id="Line_Break">
+    <header>
+      <h2>Line Break</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Line Break</h3>
+      <p>Breaking up a line of code into the next line.</p>
+      <div class="code">
+        <code>... \
+...</code>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section" id="Operators">
+    <header>
+      <h2>Operators</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Arithmetic operators</h3>
+      <p>Use mathematical operations on two variables or values.</p>
+      <div class="code">
+        <code>+
+-
+*
+/
+//
+**
+%</code>
+      </div>
+      
+      <h3>Assignment operators</h3>
+      <p>Assign one variable or value to another variable or value.</p>
+      <div class="code">
+        <code>=
++=
+-=
+*=
+/=
+//=
+%=
+**=</code>
+      </div>
+      
+      <h3>Type conversion:</h3>
+      <p>Automatic conversion of numbers during operations.</p>
+      <div class="code">
+        <code>integer and float becomes float</code>
+      </div>
+    </div>
+  </section>
+  
+  <section class="main-section" id="Comparison">
+    <header>
+      <h2>Comparison</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Comparison</h3>
+      </p>Comparing the values of two variables or values.</p>
+      <div class="code">
+        <code>&lt;
+&gt;
+&lt;=
+&gt;=
+!=
+==</code>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section class="main-section" id="Logic">
+    <header>
+      <h2>Logic</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Logic</h3>
+      <p>Use logic to combine expressions.</p>
+      <div class="code">
+        <code>and
+or
+not</code>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section class="main-section" id="Casting">
+    <header>
+      <h2>Casting</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Casting</h3>
+      <p>Convert a data type to another data type.</p>
+      <div class="code">
+        <code>int(...)
+float(...)
+str(...)</code>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section class="main-section" id="Variables">
+    <header>
+      <h2>Variables</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Assignment</h3>
+      <p>Create a variable and assign it a value.</p>
+      <div class="code">
+        <code>var = 12
+var = 4.5
+VAR = 12
+var = 'test'
+var = "test"</code>
+      </div>
+      
+      <h3>Naming convention</h3>
+      <p>Variable names follow these rules.</p>
+      <div class="code">
+        <code>letters
+numbers
+underscore
+
+begins with a letter or a underscore</code>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <section class="main-section" id="Placeholder">
+    <header>
+      <h2>Placeholder</h2>
+    </header>
+    
+    <div class="section-content">
+      <h3>Placeholder</h3>
+      <p>Placeholder description.</p>
+      <div class="code">
+        <code>placeholder code</code>
+      </div>
+      
+    </div>
+  </section>
+  
+</main>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
