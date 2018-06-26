@@ -12,12 +12,13 @@
 #hamburger-container {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 13px;
 }
 
 #hamburger-container a {
   margin: 5px;
+  font-size: 20px;
 }
 
 #nav-link-container {
@@ -51,6 +52,7 @@ code {
 
 .section-content {
   margin-left: 25px;
+  xmargin-bottom: 50px;
 }
 
 .section-content p {
@@ -63,6 +65,7 @@ code {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 .fas {
@@ -99,8 +102,8 @@ a {
     margin-top: 20px;
   }
   main {
-    xtop: 60px;
     margin: auto;
+    margin-top: 50px;
   }
   #navbar {
     padding: inherit;
