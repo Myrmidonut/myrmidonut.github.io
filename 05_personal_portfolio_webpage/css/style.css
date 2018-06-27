@@ -1,0 +1,93 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #293133;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar {
+    background-color: green;
+  }
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: rgb(16,19,20);
+  color: white;
+}
+
+.fab.fa-github {
+  font-size: 40px;
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  line-height: 100vh;
+}
+
+a:hover {
+ color: white; 
+}
+
+#projects {
+  background-color: #293133;
+  padding-top: 50px;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.project-tile {
+  background-color: rgba(16,19,20,0.5);
+  margin: 20px;
+  width: 450px;
+  border-radius: 1%;
+  box-shadow: 0 0 35px rgba(0,0,0,0.3);
+}
+
+.project-description {
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+img {
+  padding: 20px;
+  display: block;
+  width: 100%;
+}
+
+#technologies h2, #projects h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+#technologies-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 800px;
+  justify-content: space-around;
+}
+
+#technologies-container i {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+
+p {
+  color: white;
+}
