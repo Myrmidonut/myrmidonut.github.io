@@ -1,0 +1,1 @@
+window.location = "https://myrmidonut.github.io/portfolio"
